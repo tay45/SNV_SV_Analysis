@@ -7,7 +7,7 @@ It is designed for executing in the Apollo server (apollo-acc.coh.org) of the Ci
     module load smrtlink/11.0
     module load singularity
 
-To execute the pipeline, you need to download the python scripts of the pipeline (git clone https://github.com/tay45/PacBio_Variant_Analysis.git), first. And, copy the scripts to the folder to run the analysis (../running_folder/variantDetect.py). The folder should contain raw read (ccs.bam) and index (ccs.bam.pbi) files.
+To execute the pipeline, you need to download the python scripts of the pipeline (git clone https://github.com/tay45/SNV_SV_Analysis.git), first. And, copy the scripts to the folder to run the analysis (../running_folder/variantDetect.py). The folder should contain raw read (ccs.bam) and index (ccs.bam.pbi) files.
 
 And, execute the below command line in the shell.
 
