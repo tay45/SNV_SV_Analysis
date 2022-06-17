@@ -125,7 +125,8 @@ def count_sv_variant_types():
 	print("***Counting each type of structural variants...***")
 	time.sleep(2)
 	
-	#Command line (discover)
+	#Command line
+	#This code is created by Kamil S Jaron (https://bioinformatics.stackexchange.com/questions/264/is-there-an-easy-way-to-create-a-summary-of-a-vcf-file-v4-1-with-structural-va)
 	count_sv = "cat" + " " + sv_vcf_name + " " + "| perl -ne" + " " + """ 'print "$1\n" if /[;\t]SVTYPE=([^;\t]+)/' """ + " " + "| sort | uniq -c > count_sv_variant_type.txt"
 	os.system(count_sv)
 	
